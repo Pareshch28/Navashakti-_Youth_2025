@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Regna Bootstrap Template</title>
+  <title>Index by pareshch</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -54,7 +54,10 @@
           <li><a href="#Gallery">Gallery</a></li>
           <li><a href="#team Members">Team</a></li>
           
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="tel:+916302067159"  >
+  📞 Call Us
+</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -127,9 +130,10 @@
 <!-- Fullscreen Image Section -->
 <section id="full-image" style="padding:0; margin:0;">
   <div style="width:100%; height:100vh; overflow:hidden;">
-    <img src="assets/img/hero-bg.jpg" 
-         alt="Durga Devi Fullscreen" 
-         style="width:100%; height:100%; object-fit:cover;">
+    <img src="assets/img/15.jpg" 
+     alt="Durga Devi" 
+     style="width:100%; height:100vh; object-fit:cover; object-position:center;">
+
   </div>
 </section>
 
@@ -169,6 +173,51 @@
   </div>
 </section>
 
+<!-- Contribution & Estimation Section -->
+<section id="contribution" style="padding: 80px 0; background: #fafafa;">
+  <div class="container text-center" data-aos="fade-up">
+
+    <h2 style="font-size: 36px; font-weight: bold; text-decoration: underline; text-decoration-color: rgb(225, 24, 24); margin-bottom: 10px;">
+      Contribution & Estimation – 2025
+    </h2>
+    <p style="font-size: 18px; color: #b45757; margin-bottom: 40px;">
+      “Seva & Support”<br>
+      Track contributions and festival expenses with transparency.
+    </p>
+
+    <div style="max-width: 600px; margin: auto;">
+      <canvas id="contributionChart"></canvas>
+    </div>
+
+  </div>
+</section>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('contributionChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Estimation (₹95,000)', 'Contribution (₹89,000)'],
+      datasets: [{
+        data: [95000, 89000],
+        backgroundColor: ['#FFB3B3', '#CCE8CD'],
+        borderWidth: 2,
+        hoverOffset: 10
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { font: { size: 14 } }
+        }
+      }
+    }
+  });
+</script>
     
 
 
@@ -466,7 +515,7 @@
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">@bypareshch</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong class="px-1 sitename">@pareshch</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->

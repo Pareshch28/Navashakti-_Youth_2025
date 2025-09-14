@@ -1651,3 +1651,30 @@ section,
     margin-top: 10px;
   }
 </style>
+
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .animated-heading {
+    font-size: 28px !important;
+  }
+  .animated-subtitle {
+    font-size: 16px !important;
+  }
+  #hero img {
+    object-fit: cover;
+    height: 100vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #AboutUs div[style*="display: flex"] {
+    flex-direction: column !important;
+    padding: 20px;
+  }
+  #AboutUs img {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+}
